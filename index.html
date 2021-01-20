@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Полиfood</title>
+        <link href="./assets/css/main.css" rel="stylesheet" />
+        <link href="./assets/css/logo.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="logo">Полиfood</div>
+    </body>
+    <script> // вывод логотипа 
+        localStorage.setItem("building", "true");
+        setTimeout(() => //позволяет выбрать фунцкию один раз
+		{
+            window.location.href =
+                window.location.href.split("/").slice(0, -1).join("/") + "/catalog/index.html"; 
+		}, 1000); 
+    </script>
+</html>

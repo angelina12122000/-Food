@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Мои заказы | Полиfood</title>
+        <link href="../assets/css/main.css" rel="stylesheet" />
+        <link href="../assets/css/choose-building.css" rel="stylesheet" />
+        <link href="../assets/css/header.css" rel="stylesheet" />
+        <link href="../assets/css/toolbar.css" rel="stylesheet" />
+        <link href="../assets/css/profile.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="header">
+            <a
+                onclick="javascript:history.back(); return false;"
+                class="header__arrow"
+            >
+                <svg
+                    width="9"
+                    height="15"
+                    viewBox="0 0 9 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M0.646447 7.64645C0.451185 7.84171 0.451185 8.15829 0.646447 8.35355L3.82843 11.5355C4.02369 11.7308 4.34027 11.7308 4.53553 11.5355C4.7308 11.3403 4.7308 11.0237 4.53553 10.8284L1.70711 8L4.53554 5.17157C4.7308 4.97631 4.7308 4.65973 4.53554 4.46447C4.34027 4.2692 4.02369 4.2692 3.82843 4.46447L0.646447 7.64645ZM15 7.5L1 7.5L1 8.5L15 8.5L15 7.5Z"
+                            fill="currentColor"
+                        />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="9" height="15" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <h1 class="header__title">Мои заказы</h1>
+        </div>
+        <div class="profile">
+            <a href="../catalog/index.html" class="profile__more">
+                <span>Заказать еще</span>
+            </a>
+        </div>
+        <script src="../assets/js/products.js"></script>
+        <script src="../assets/js/template.js"></script>
+        <script>
+            setProfile();
+            setChooseBuilding();
+            setToolbar("../", 4);
+        </script>
+    </body>
+</html>
